@@ -1,34 +1,19 @@
-# [A Python File Security Filter Driver SDK Demo](https://www.easefilter.com/Forums_Files/Comprehensive-file-security-sdk.htm)
+# EaseFilter File System Filter Python SDK
 
-This is a demo library that provides a Pythonic API over the EaseFilter File System Filter Driver SDK.
-The source code is throughly documented, and intended to serve as an example for using EaseFilter.
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![Language](https://img.shields.io/badge/Language-Python%203.x-yellow)
+![License](https://img.shields.io/badge/License-Commercial%20SDK-green)
 
-A CLI is included, based on the C++ demo.
+The **EaseFilter Python SDK** provides a powerful, high-level Python interface to the EaseFilter Windows Kernel Minifilter Driver. This SDK empowers Python developers to easily integrate comprehensive file system monitoring, granular access control, transparent file encryption, and process sandboxing directly into their Python applications.
+![EaseFilter File Security Architecture](https://www.easefilter.com/images/zero-trust-architecture.jpg)
 
-*Python version 3.9 or above is required* to use this program.
-Also, **a license key is required**. 
+## 🚀 Key Features
 
-The provided interfaces include:
-
-## [EaseFilter File Monitor Filter Driver SDK](https://www.easefilter.com/kb/file-monitor-filter-driver-sdk.htm)
-
-EaseFilter Filter Driver SDK can monitor Windows file I/O activities in real time, track the file access and changes, monitor file and folder permission changes, audit who is writing, deleting, moving or reading files, report the user name and process name, get the user name and the ip address when the Windows file server's file is accessed by network user.
-
-##  [EaseFilter File Control Filter Driver SDK](https://www.easefilter.com/kb/file-control-file-security-sdk.htm)
-
-The EaseFilter control filter driver can intercept the file I/O before it goes down to the file system or after it returned from the file system. You can deny the file access in the pre file I/O operations based on the filter rule policies. It meant that the EaseFilter can complete and return the file I/O without going down to the file system. Also you can modify the I/O data before it goes down to the file system or after it returned from the file system.
-
-##  [EaseFilter Transparent File Encryption Filter Driver SDK](https://www.easefilter.com/kb/transparent-file-encryption-filter-driver-sdk.htm)
-
-The EaseFilter Encryption Filter Driver(EEFD) is a transparent on-access file level encryption file system filter driver. It can encrypt or decrypt the file automatically in the file system level. The EEFD is a mature commercial product. It provides a complete modular framework for the developers to build the on access file encryption software. With the EEFD, you can incorporate transparent on-access, file level encryption into your application.
-
-##  [EaseFilter Process Filter Driver SDK](https://www.easefilter.com/Forums_Files/Process-Monitor.htm)
-
-Easefilter process filter driver is a kernel-mode driver that filters process/thread creation and termination, it provides you an easy way to develop Windows application for the Windows process monitoring and protection. With the EaseFilter Process Filter Driver, it enables your application to prevent the untrusted executable binaries ( malwares) from being launched, protect your data being damaged by the untrusted processes. 
-
-##  [EaseFilter Registry Filter Driver SDK](https://www.easefilter.com/Forums_Files/RegMon.htm)
-
-Registry filter driver is a kernel-mode driver that filters registry calls, it provides you an easy way to develop Windows application for registry monitoring and protection, track the registry change and prevent the registry from being changed by unauthorized processes or users. 
+* **File System Monitoring:** Track file creation, deletion, reading, writing, renaming, and security changes in real-time.
+* **Granular Access Control:** Intercept file I/O operations and dynamically allow, deny, or modify access based on user, process, or file type.
+* **Transparent File Encryption:** Automatically encrypt data on-the-fly as it is written to the disk, and decrypt it when read by authorized processes.
+* **Process Sandboxing:** Restrict untrusted processes from modifying critical system files or accessing confidential directories.
+* **Rapid Integration:** Utilize Python's rapid development capabilities without needing to write complex C/C++ kernel-level code.
 
 ## Installation
 
@@ -255,6 +240,17 @@ Consult [pytest's documentation](https://docs.pytest.org/en/stable/) for more in
 * [Filter Driver Developer Guide](https://www.easefilter.com/kb/DeveloperGuide.htm)
 * [MiniFilter Filter Driver Framework](https://www.easefilter.com/kb/minifilter-framework.htm)
 * [Isolation Filter Driver](https://www.easefilter.com/kb/Isolation_Filter_Driver.htm)
+
+## License
+
+This repository contains two distinct licensing categories:
+
+1. **Wrapper/Implementation Code (MIT License):** 
+   The source code, scripts, and configuration files provided directly in this repository are licensed under the [MIT License](LICENSE). You are free to modify, distribute, and use this specific integration code.
+
+2. **EaseFilter SDK (Commercial License):**
+   This project requires the EaseFilter SDK (including its binaries, filter drivers, and core libraries) to function. The EaseFilter SDK is **proprietary commercial software** and is strictly excluded from the MIT License.   
+   To use the EaseFilter SDK for commercial purposes or in a production environment, you must obtain a valid commercial license directly from [EaseFilter](https://www.easefilter.com/license.pdf).
 
 ## Support
 If you have questions or need help, please contact support@easefilter.com 
