@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-Commercial%20SDK-green)
 
 The **EaseFilter Python SDK** provides a powerful, high-level Python interface to the EaseFilter Windows Kernel Minifilter Driver. This SDK empowers Python developers to easily integrate comprehensive file system monitoring, granular access control, transparent file encryption, and process sandboxing directly into their Python applications.
-![EaseFilter File Security Architecture](https://www.easefilter.com/images/file-security-architecture)
+![EaseFilter File Security Architecture](https://www.easefilter.com/images/file-security-architecture.jpg)
 
 ## 🚀 Key Features
 
